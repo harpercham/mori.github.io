@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  .w3-sidebar a {
+    font-family: "Roboto", sans-serif
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .w3-wide {
+    font-family: "Montserrat", sans-serif;
+  }
+</style>
+
+<body class="w3-content" style="max-width:1200px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+      <div style="text-align: left"><img
+          src="https://drive.google.com/uc?export=view&id=1JEOWqxiJf5rG-5UqhuRvy9pSX3TKkj0J" width="100" /></div>
+    </div>
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8pOVvjq7ZxWJhPv3jZlNHEjAweGT3Awrl6kCoSjr_4NH-gw/viewform"
+        target="_blank" class="w3-bar-item w3-button">ORDER</a>
+      <a href="#cookies" class="w3-bar-item w3-button">COOKIES</a>
+      <a href="#footer" class="w3-bar-item w3-button">CONTACT US</a>
+      <a href="#cat" class="w3-bar-item w3-button">OUR CAT</a>
+
+    </div>
+    <a href="https://instagram.com/mori_dessert_sg?utm_medium=copy_link" target="_blank"
+      class="w3-bar-item w3-button w3-padding"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png"
+        alt="MORI" width="20" height="20">
+    </a>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <div class="w3-bar-item w3-padding-24 w3-wide"><img
+        src="https://drive.google.com/uc?export=view&id=1J97bTUOzDWY9lccVXhu0KirvWxt5e8u4" width="100" /></div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
+        class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:250px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <!-- Top header -->
+    <header class="w3-container w3-xlarge">
+      <p class="w3-left">MORI HOMEMADE COOKIES</p>
+    </header>
+
+    <!-- Image header -->
+    <div class="w3-display-container w3-container">
+      <img src="https://drive.google.com/uc?export=view&id=1wtHZvSuCajrNg7zKPba1RlyNFAPGCr9v" alt="Jeans"
+        style="width:100%">
+      <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+        <h1 class="w3-jumbo w3-hide-small">MORI COOKIES</h1>
+        <h1 class="w3-hide-small">MORE COOKIES...</h1>
+      </div>
+    </div>
+
+    <div class="w3-container w3-text-grey" id="cookies">
+      <p>每樣商品列出的單價以裝滿250ml容器的量作定價依據</p>
+    </div>
+
+    <!-- Product grid -->
+    <div class="w3-row ">
+      <div class="w3-col l4 s6">
+        <div class="w3-container">
+          <img src="https://drive.google.com/uc?export=view&id=1uJQuUcWhid8E7fRkiCWPPvtDr2yEwZKU" style="width:100%">
+          <p>杏仁黑森林 <br>Chocolate<br><b>$10</b></p>
+        </div>
+        <div class="w3-container">
+          <img src="https://drive.google.com/uc?export=view&id=1Mt5-fpSolEiDHZouRH8LclLQivTBFmy1" style="width:100%">
+          <p>咖哩風味 <br>Curry<br><b>$10</b></p>
+        </div>
+      </div>
+
+      <div class="w3-col l4 s6">
+        <div class="w3-container">
+            <img src="https://drive.google.com/uc?export=view&id=1KgQ5YGeAfiat7ueA6XQq6DHhO19hokkE" style="width:100%">
+          <p>格雷伯爵 <br>Earl Grey<br><b>$10</b></p>
+        </div>
+        <div class="w3-container">
+          <img src="https://drive.google.com/uc?export=view&id=1jOQy0iPw29MTWwv9pmAimXMG_tkbfzpY" style="width:100%">
+          <p>橘子酥 <br>Orange<br><b>$12</b></p>
+        </div>
+      </div>
+
+      <div class="w3-col l4 s6">
+        <div class="w3-container">
+          <img src="https://drive.google.com/uc?export=view&id=1OgLhTAg201-_etcYFbR3_XgYjvK--I23" style="width:100%">
+          <p>義式起司 <br>Cheesy Red Pepper<br><b>$12</b></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+      <div class="w3-row-padding">
+        <div>
+          <h4>Leave Us a Message</h4>
+          <p>Questions? Go ahead.</p>
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+            <button type="submit" class="w3-button w3-block w3-black">Send</button>
+          </form>
+        </div>
+
+    </footer>
+
+
+    <div id="cat" class="w3-black w3-center w3-padding-24">
+      <img src="https://drive.google.com/uc?export=view&id=1dp0dEUVocvi163_cIojW4my3tfxShXck" style="width:100%">
+      Made with Brownie (2022)</a> <a href="https://instagram.com/brownie_cat_sg?utm_medium=copy_link" target="_blank"
+        class="w3-bar-item w3-button w3-padding"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/800px-Instagram_logo_2016.svg.png"
+          alt="MORI" width="20" height="20">
+      </a>
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+
+  <script>
+    // Accordion 
+    function myAccFunc() {
+      var x = document.getElementById("demoAcc");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+
+
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
