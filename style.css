@@ -1,0 +1,13 @@
+#slideshow {
+    position: relative;
+    width: 65vmax;
+    height: 35vmax;
+    margin: auto;
+
+  }
+  
+  #slideshow > div {
+    position: absolute;
+    margin: auto;
+
+  }
