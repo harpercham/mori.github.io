@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
 
 <style>
   .w3-sidebar a {
@@ -50,9 +53,9 @@
   </nav>
 
   <!-- Top menu on small screens -->
-  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <header class="w3-bar w3-top w3-hide-large w3-pale-red w3-xlarge">
     <div class="w3-bar-item w3-padding-24 w3-wide"><img
-        src="https://drive.google.com/uc?export=view&id=1J97bTUOzDWY9lccVXhu0KirvWxt5e8u4" width="100" /></div>
+        src="https://drive.google.com/uc?export=view&id=1lZ_rax59ud1i794cZ34He2QBBwPJCBlJ" width="100" /></div>
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i
         class="fa fa-bars"></i></a>
@@ -74,12 +77,18 @@
     </header>
 
     <!-- Image header -->
-    <div class="w3-display-container w3-container">
-      <img src="https://drive.google.com/uc?export=view&id=1wtHZvSuCajrNg7zKPba1RlyNFAPGCr9v" alt="Jeans"
+    <div id="slideshow">
+      <div>
+        <img src="https://drive.google.com/uc?export=view&id=1mDDmogUzlCw2LKuBkrsnRF7WXZbqplP6"
+          style="width:100%">
+      </div>
+      <div>
+        <img src="https://drive.google.com/uc?export=view&id=1mNJQAecQpAvz0I4MzctITAQIGcd656UY"
         style="width:100%">
-      <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-        <h1 class="w3-jumbo w3-hide-small">MORI COOKIES</h1>
-        <h1 class="w3-hide-small">MORE COOKIES...</h1>
+      </div>
+      <div>
+        <img src="https://drive.google.com/uc?export=view&id=1mMj71x21305LlcmLrZPN6La8AJfCLg_Q"
+        style="width:100%">
       </div>
     </div>
 
@@ -102,7 +111,7 @@
 
       <div class="w3-col l4 s6">
         <div class="w3-container">
-            <img src="https://drive.google.com/uc?export=view&id=1KgQ5YGeAfiat7ueA6XQq6DHhO19hokkE" style="width:100%">
+          <img src="https://drive.google.com/uc?export=view&id=1KgQ5YGeAfiat7ueA6XQq6DHhO19hokkE" style="width:100%">
           <p>格雷伯爵 <br>Earl Grey<br><b>$10</b></p>
         </div>
         <div class="w3-container">
@@ -152,6 +161,18 @@
 
 
   <script>
+    //image header slide
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function () {
+      $('#slideshow > div:first')
+        .fadeOut(2000)
+        .next()
+        .fadeIn(2000)
+        .end()
+        .appendTo('#slideshow');
+    }, 5000);
+
     // Accordion 
     function myAccFunc() {
       var x = document.getElementById("demoAcc");
