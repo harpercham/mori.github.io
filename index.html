@@ -39,8 +39,7 @@
           src="https://drive.google.com/uc?export=view&id=1JEOWqxiJf5rG-5UqhuRvy9pSX3TKkj0J" width="100" /></div>
     </div>
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-      <a href="https://forms.gle/roGbvgeYRqjuUx648"
-        target="_blank" class="w3-bar-item w3-button">ORDER</a>
+      <a href="https://forms.gle/roGbvgeYRqjuUx648" target="_blank" class="w3-bar-item w3-button">ORDER</a>
       <a href="#cookies" class="w3-bar-item w3-button">COOKIES</a>
       <a href="#footer" class="w3-bar-item w3-button">CONTACT US</a>
 
@@ -160,9 +159,8 @@
       <div class="w3-row-padding">
         <div>
           <h4>Leave Us a Message</h4>
-          <p>Order ? <a
-              href="https://forms.gle/roGbvgeYRqjuUx648"
-              target="_blank" class="w3-bar-item w3-button" style="background-color: #373C38; color: white;">Here</a>.
+          <p>Order ? <a href="https://forms.gle/roGbvgeYRqjuUx648" target="_blank" class="w3-bar-item w3-button"
+              style="background-color: #373C38; color: white;">Here</a>.
           </p>
           <p><input class="w3-input w3-border" type="text" placeholder="Name" id="Name" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Email" id="Email" required></p>
@@ -195,18 +193,22 @@
 
 
   <script>
-    var firebaseConfig = {
-      apiKey: "AIzaSyClqrMrPYpQ61Xf5M29nk3YFoI4ZDhDTl0",
-      authDomain: "gce-website-f2e54.firebaseapp.com",
-      databaseURL: "https://gce-website-f2e54.firebaseio.com",
-      projectId: "gce-website-f2e54",
-      storageBucket: "gce-website-f2e54.appspot.com",
-      messagingSenderId: "233893955093",
-      appId: "1:233893955093:web:3d98a9ad92f23002"
-    };
+
 
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
+    // Open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
   </script>
 
 
